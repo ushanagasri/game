@@ -1,0 +1,85 @@
+#row1{
+display:inline-block;
+float:left;
+  }
+#row1 > div {
+  border: 3px solid white;
+  flex: auto;
+}
+.card__face {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+border-width:10px,10px,10px,10px;
+border-color:white;
+    backface-visibility: hidden;
+  }
+  .card__face--front {
+    width: 100px;
+    display:inline-block;
+    height: 100px;
+    background:blueviolet;
+   
+border-color:white;
+    transform: rotateY(180deg);
+  }
+  
+  .card__face--back  {
+    width: 100px;
+    height: 100px;
+    display:inline-block;
+    background-image:url("im1.jpeg");
+    background-size: 100px 100px;
+     
+    transform: rotateY(180deg);
+       
+  }
+  .card__face--find  {
+    width: 100px;
+    height: 100px;
+    display:inline-block;
+    background-image:url("img2.jpeg");
+    border:50px;
+    background-size: 100px 100px; 
+    transform: rotateY(180deg);
+       
+  }
+#score{
+    float:right;
+   font-size:30px;
+font-family:Impact,Haettensehweiler,'Arial Narrow Bold',sans-serif;
+margin-right:500px;
+    color:green;
+display:inline-block;
+  
+}
+#time{
+    float:right;
+   font-size:30px;
+font-family:Impact,Haettensehweiler,'Arial Narrow Bold',sans-serif;
+margin-right:400px;
+    color:orange;
+display:inline-block;
+  
+}
+body {
+  color: #fff;
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+.box {
+  background: #2db34a;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 400px;
+  line-height:40px;
+  text-align: center;
+  float:right;
+  margin-right:300px;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 415px;
+}
+.box:hover {
+  background: #ff7b29;
+}
